@@ -1,0 +1,397 @@
+Meenakshi ---->
+
+Kavya -  Algo primary  - Krithika, Asha,
+
+         Algo secondary - ...
+
+
+	 Hadera - Bharthi / Ilakya
+
+
+Karunyan -  ???
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+deepitha / aaditya -  2.0 continues to work. 
+			2.1 - work. 
+
+				3 or 4  - if we can make it  ( Invoice credential.. )
+
+
+++++++++++++++++++++++
+
+
+Sakthi, Sakul, Maran
+
++++++++++++++++++++++++++
+
+
+ALGORAND : Blockchain.. 
+
+
+ Payment --------> Buyer to Seller wallet in the ALGO currency.. . 
+
+
+<ALGO>
+
+			Reasearch what it would take to send USDCA ( which is a specific Asset in this blockchain ) instead. 
+
+			Chainid : ALGO TESTNET ... , which will still be the same.
+
+				but we sent the native Asset.
+
+			Now , we need to modify the code, or additionally paramterize to send ALGO, or USDCA  or a new stablecoin
+					that we create. 
+
+for
+
+<HADERA>
+			Chain ID will be different.
+			native asset is HBAR
+			How is USDC is supported ..
+			If we do the same.., for a new stablecoin - how to do it. 
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+store data, store asset
+
+A smart contract. 
+
+++++++++++++++++++++++
+
+
+for that payment to occur....
+
+	
+	1. The PERSON  ( which is clicking the UI button ) -  dAPP ( is a webapp - react web node js ..., writing to the blockchain )...
+
+			or the Agents ( jupiterSellerAgent or the tommyBuyerAgent ) communicating via A2A
+
+
+
+			Do they have the right Delegation ..... and Authority for the 
+
+				PERSON - Engagment context role ( ECR ... )  -- Deepitha / Aaditya .. new... {......NOTHING is new here..}
+					GLEIF-QVI-LE(TommyHilfilger)-OOR( CPO) - tommyBuyerAgent( delegation)............
+						  LE(TommyHilfilger)-OOR( CSO) - jupiterSellerAgent( delegation).........
+
+
+
+	if the buyerVerifier - checks for jupiterSellerAgent( delegation).........from its OOR ( CSO ) 
+
+			if passes -- DO X
+
+					if not ..... DO NOT proceed.
+
+
+			similarly sellerVerifier - checks for tommyBuyerAgent( delegation)
+
+				Invoice...  {  in a credential..} extend it .., verification of credential is script 3 or 4. 
+
+
+
+
+Positive -- trueJupiterSales ( agentname, delegatorname, docker ) - vLE I - valid or not. 
+
+                  because we had put Agentcard.., also we had plain text..
+
+               fakeAgent --- possible for it to read the Agent card of Juipter.. DESIGN...
+                                                 (  agentName, delegatorname, env )
+
+
+
+
+		  Agent card ...   agentName... 
+                                           who is it connect to... OOR role.
+
+
+			another message between buyer and seller... in tat message buyer or seller agent, who it is working for. ( CSO or CPO )
+			
+			2FA/ MFA -- web2 cyber security.. 
+
+
+				Wallet / address creates it ----> send to another wallet.. 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+UI in UI.. 
+
+		1.  vLEI - seller and buyers 
+
+		2. reducing payment cycle time and fees.
+
+		3. delivery versus payment - vlei ( proof of delegation // credential)
+		
+		4. Escrow ( value added services ) 
+
+		5. Agents
+
+		6. ACTUS for cashflow management .. 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+1.UI   / Agentic   (or) Agent heavy / but hybrid with ui 
+
+2. Direct sale  
+
+		*digital ----------------------------> Hadera...... ( any digital downloads.... )  atomic transaction
+
+
+	Invoice Factory
+
+
+			vLEI - cross validation - finding new buyers sellers...  ( Algorand marketplace... connected to A2A
+													validated with vLEI )
+
+				 - tell me legal and regulated agents to work with., 
+
+				payment that can send me stablecoins.. 
+
+					what is being paid for
+
+						at delegation level ( agent )
+
+						at credential level ( invoice )
+
+				Escrow or NOT ( if we do..   CONDITIOAL atomic )  - milestones based.
+
+					vLEI.....
+
+					EXporter.. govt as tax..
+						money comes -- govt ... pays a certain percent back to the exporter.., prove say the 
+					remittance  , it tied ot the invoice to the PO...,  9 months... --->
+
+				Buyer itself--- if i paid early, what is teh discount.. ( this a simple math function.. dynamic discounting)
+
+
+
+
+			*Invoice Factoring -- if the platform .. can connect to invoice factoring companies.. ( market making )
+
+										.....
+
+			* Invoice Accounts payable / Accounts Receivable --  ACTUS... , they want to optimize cashflows... ACTUS .. 
+
+
+		
+
+								(or) REGULATED DEFI ... ( there is something called darkpools)....
+
+
+		
+	
+		
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Algorand... T I T A N  - Trade Intelligence and Tokenized Asset Network..
+
+		Sellers and Buyers - new sellers/buyers in existing or new markets...
+
+					Buyer side.. ( bigger companies ) --- AI agents. 
+						
+			1. Finding buyers / sellers for each other -- match making... marketplace..
+
+					A web 2 app
+					A web 3 dapp  ( AtitansV2 - MarketEscrowV5. ) .......>>> buyers and sellers. 
+												1 buyer and many sellers..
+
+
+				Buyer --- > Seller selection... of the X number of sellers .. advertised.., the buyer will only wokr iwth 
+
+						sellers thst are in vLEI ( either person or Agent )
+
+						if they find many -- then they choose on other aspects. 
+
+
+
+			2.     Search thru other marketplaces.... NANDA ( decen ), ( A2A, MCP,( support nanda ), Ai protocols.., AGI  )
+
+					Any marketplaces.., that are advertising AI agents...
+
+
+
+
+                         3.  We are AlgoTITAN ( V2 ui clicks .. web app on blockchain - it is called a dapp..,   V3 prelim of agent)
+
+
+					Legent... GoogleA2A platform... 
+
+
+			 4. Direct Sale
+
+				A. Digital transfer ( digital download of a file / etc..  ) 
+			
+					ATOMIC SWAP...
+
+				B. Physically ( ordering somethng from amazon ... takes ur order.., takes the money... they will ship u 
+					- 	 
+
+
+						TITLE ( ...Tokenization... ) A house - A TESLA ., and similarly Invoice...Bill of Lading... 
+	
+							EXIM - Bill of Lading..., ( TITLE doc )-- House document.. 
+
+						Sell it ( or ) use it to finance... 
+
+
+					Escrow Function
+
+				Buyer 	-   Seller
+
+					Buyer and the Seller - ESCROW...
+
+
+							very simple escrow ... 
+
+
+					whether we need an escrow for Direct Sale ( Buyer pays..)...,  
+
+						however, NON negotiable -- seller
+							Negotiable ---- more fluid, because it can be assigned to another buyer even after 							shipping..
+
+							* BILL OF LADING --- can take the consignment on the receiving end.. 
+
+
+		Buyer 							seller
+	
+				purcharse order				accept PO
+
+									**Send Invoice
+
+										send warehouse receipt..
+
+						Algo BOX... stores data.. 
+
+					Algokit -- program on algrorand 
+
+						smartcontracts 
+						
+
+					SDKS that available to read/write from the blockchain,
+
+						frontend can call also call the smart contract. 
+					
+							20% - accept PO
+							50% - you have done the BL ( Invoice ) 
+							30% - once i get the goods.
+
+
+
+				checks Invoice / WR
+					-----------------> payment...	
+
+				INvoice Factoring side. 
+
+
+					Seller ----- > sells the invoice to < third party financier )
+
+
+						gets 1 M order ---> 1 M invoice ----> 0.9 M... 
+
+									financier will give money earlier--- helping seller execute the order..
+
+							will need to check for - valid buyer, reputation, bank balance, assets. etc etc. 
+
+								Buyer pays - he will get the invoice from the financier...
+
+
+
+				sellers ---- >   option of Invoice factoring companies..
+                                         milestones based... 				80% - PO acceptace, SI, Invoice( BL ) - 
+											20% - some other milestone... 
+
+
+					BoL will need to change hands., unless the cargo cannot be taken out at Imports... 
+
+---------------------------------------------------------------------------
+
+		
+		HYBRID....
+
+
+
+			Invoice Factr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

@@ -1,0 +1,74 @@
+{
+  "buyers": [
+    {
+      "id": "buyer-001",
+      "agentName": "tommyBuyerAgent",
+      "organizationName": "TOMMY HILFIGER EUROPE B.V.",
+      "lei": "54930012QJWZMYHNJW95",
+      "address": "Danzigerkade 165, 1013 AP Amsterdam, Netherlands",
+      "vLEIVerified": true,
+      "lastVerificationTimestamp": "2025-11-19T18:30:00Z",
+      "agentRegistry": "NANDA",
+      "agentRegistryLink": "https://nanda.registry.example/agents/tommy-buyer",
+      "agentCardLink": "http://localhost:9090/.well-known/agent-card.json",
+      "officialRole": "ChiefProcurementOfficer",
+      "engagementRole": "Buyer Agent",
+      "capabilities": ["Price Negotiation", "Vendor Verification", "Contract Review", "Purchase Order Management"],
+      "certifications": ["vLEI-Verified", "GoogleA2A-Certified", "ISO-27001"],
+      "products": ["Textiles", "Apparel", "Fashion Accessories"]
+    }
+  ],
+  "sellers": [
+    {
+      "id": "seller-001",
+      "agentName": "jupiterSellerAgent",
+      "organizationName": "JUPITER KNITTING COMPANY",
+      "lei": "3358004DXAMRWRUIYJ05",
+      "address": "5/22, Textile Park, Tiruppur, Tamil Nadu, India",
+      "vLEIVerified": true,
+      "lastVerificationTimestamp": "2025-11-19T18:25:00Z",
+      "agentRegistry": "NANDA",
+      "agentRegistryLink": "https://nanda.registry.example/agents/jupiter-seller",
+      "agentCardLink": "http://localhost:8080/.well-known/agent-card.json",
+      "officialRole": "ChiefSalesOfficer",
+      "engagementRole": "Seller Agent",
+      "capabilities": ["Product Listing", "Order Processing", "Quality Assurance", "Export Documentation"],
+      "certifications": ["vLEI-Verified", "GoogleA2A-Certified", "PCI-DSS", "ISO-9001"],
+      "products": ["Cotton Textiles", "Knitted Fabrics", "Export Quality Garments"]
+    },
+    {
+      "id": "seller-002",
+      "agentName": "tirupurExportsAgent",
+      "organizationName": "TIRUPUR TEXTILES EXPORTS LTD",
+      "lei": "3358005EXPTXT9876543",
+      "address": "Industrial Estate, Tiruppur, Tamil Nadu, India",
+      "vLEIVerified": true,
+      "lastVerificationTimestamp": "2025-11-19T17:45:00Z",
+      "agentRegistry": "GLEIF",
+      "agentRegistryLink": "https://gleif.org/agents/tirupur-exports",
+      "agentCardLink": "http://localhost:8081/.well-known/agent-card.json",
+      "officialRole": "Director of Sales",
+      "engagementRole": "Seller Agent",
+      "capabilities": ["Bulk Order Processing", "International Shipping", "Quality Control", "Custom Design"],
+      "certifications": ["vLEI-Verified", "GoogleA2A-Certified", "GOTS", "OEKO-TEX"],
+      "products": ["Organic Cotton", "Sustainable Fabrics", "Custom Designs"]
+    },
+    {
+      "id": "seller-003",
+      "agentName": "globalFabricsAgent",
+      "organizationName": "GLOBAL FABRICS INTERNATIONAL",
+      "lei": "1234567890FABRICS123",
+      "address": "123 Trade Center, Mumbai, Maharashtra, India",
+      "vLEIVerified": true,
+      "lastVerificationTimestamp": "2025-11-19T16:30:00Z",
+      "agentRegistry": "INDIA_TRADE_REGISTRY",
+      "agentRegistryLink": "https://india-trade.gov.in/agents/global-fabrics",
+      "agentCardLink": "http://localhost:8082/.well-known/agent-card.json",
+      "officialRole": "VP of International Trade",
+      "engagementRole": "Seller Agent",
+      "capabilities": ["Multi-Currency Transactions", "Global Logistics", "Trade Finance", "Compliance Management"],
+      "certifications": ["vLEI-Verified", "GoogleA2A-Certified", "AEO", "ISO-14001"],
+      "products": ["Silk Fabrics", "Wool Textiles", "Synthetic Blends", "Premium Materials"]
+    }
+  ]
+}

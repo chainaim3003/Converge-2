@@ -1,0 +1,889 @@
+   Prefix: EOk-6vJMLdXpcMFCgh_Z300eE1v6pzY15ba8S2vzJSbM
+   OOBI: http://keria:3902/oobi/EOk-6vJMLdXpcMFCgh_Z300eE1v6pzY15ba8S2vzJSbM/agent/EM-WC-_Ly3DxaLfgjPRMxK7FRPhzMr3NM-_MQSt1xb7H
+      → Resolving OOBIs for Person...
+Person Resolving LE OOBI: http://keria:3902/oobi/ELTRPbnJqrJv_ymTGH08E_zC6jy6v92aMRJCJwUC5atl/agent/EHRsBJlugk4A-drDBxSDmudhjla2-fWrh82_uOkMXxFp
+OOBI Resolved: http://keria:3902/oobi/ELTRPbnJqrJv_ymTGH08E_zC6jy6v92aMRJCJwUC5atl/agent/EHRsBJlugk4A-drDBxSDmudhjla2-fWrh82_uOkMXxFp
+LE Resolving Person OOBI: http://keria:3902/oobi/EOk-6vJMLdXpcMFCgh_Z300eE1v6pzY15ba8S2vzJSbM/agent/EM-WC-_Ly3DxaLfgjPRMxK7FRPhzMr3NM-_MQSt1xb7H
+OOBI Resolved: http://keria:3902/oobi/EOk-6vJMLdXpcMFCgh_Z300eE1v6pzY15ba8S2vzJSbM/agent/EM-WC-_Ly3DxaLfgjPRMxK7FRPhzMr3NM-_MQSt1xb7H
+QVI Resolving Person OOBI: http://keria:3902/oobi/EOk-6vJMLdXpcMFCgh_Z300eE1v6pzY15ba8S2vzJSbM/agent/EM-WC-_Ly3DxaLfgjPRMxK7FRPhzMr3NM-_MQSt1xb7H
+OOBI Resolved: http://keria:3902/oobi/EOk-6vJMLdXpcMFCgh_Z300eE1v6pzY15ba8S2vzJSbM/agent/EM-WC-_Ly3DxaLfgjPRMxK7FRPhzMr3NM-_MQSt1xb7H
+Person Resolving QVI OOBI: http://keria:3902/oobi/EHY69UKBWhgPFiM5_LSYGC6dK_S_o8IqLmlOaodYN9Y3/agent/EKqCScrdj54j3OFHrMwI1Ra1V2t4LGRc1jyxYSWRlBlG
+OOBI Resolved: http://keria:3902/oobi/EHY69UKBWhgPFiM5_LSYGC6dK_S_o8IqLmlOaodYN9Y3/agent/EKqCScrdj54j3OFHrMwI1Ra1V2t4LGRc1jyxYSWRlBlG
+Person Resolving Verifier (Sally) OOBI: 
+OOBI Resolved: http://verifier:9723/oobi
+      → Creating LE registry for OOR credentials...
+Creating registry in LE AID
+Using LE alias: Jupiter_Knitting_Company
+Creating registry: Jupiter_Knitting_Company-oor-registry
+Successfully created credential registry: EI1IYBkIWH9EdmvS3gZfe9DFqs29A4hRM9sClNKef5YY
+Registry info written to /task-data/le-registry-info.json
+      → LE issues OOR_AUTH credential for Chief Sales Officer...
+        ✓ Using person: Chief Sales Officer, role: ChiefSalesOfficer, LEI: 3358004DXAMRWRUIYJ05 from configuration
+Creating OOR Auth ACDC Credential
+Issuing OOR Auth credential to EHY69UKBWhgPFiM5_LSYGC6dK_S_o8IqLmlOaodYN9Y3 for person Chief Sales Officer (ChiefSalesOfficer) with LEI 3358004DXAMRWRUIYJ05 (from parameters)
+Using LE alias: Jupiter_Knitting_Company
+Using registry: Jupiter_Knitting_Company-oor-registry
+Resolving schema OOBI http://schema:7723/oobi/EKA57bKBKxr_kN7iN5i7lMUxpMG-s19dRcmov1iDxz-E
+Using LE credential SAID for edge: EIw9li_ud1T3E4GIFW9vaQ2ukRCB7ZhDVqk9opt9F7pm
+Cred data: {
+  AID: 'EOk-6vJMLdXpcMFCgh_Z300eE1v6pzY15ba8S2vzJSbM',
+  LEI: '3358004DXAMRWRUIYJ05',
+  personLegalName: 'Chief Sales Officer',
+  officialRole: 'ChiefSalesOfficer'
+}
+Credential data: {
+  i: 'ELTRPbnJqrJv_ymTGH08E_zC6jy6v92aMRJCJwUC5atl',
+  ri: 'EI1IYBkIWH9EdmvS3gZfe9DFqs29A4hRM9sClNKef5YY',
+  s: 'EKA57bKBKxr_kN7iN5i7lMUxpMG-s19dRcmov1iDxz-E',
+  a: {
+    i: 'EHY69UKBWhgPFiM5_LSYGC6dK_S_o8IqLmlOaodYN9Y3',
+    dt: '2025-11-12T18:19:38.697000+00:00',
+    AID: 'EOk-6vJMLdXpcMFCgh_Z300eE1v6pzY15ba8S2vzJSbM',
+    LEI: '3358004DXAMRWRUIYJ05',
+    personLegalName: 'Chief Sales Officer',
+    officialRole: 'ChiefSalesOfficer'
+  },
+  e: {
+    d: '',
+    le: {
+      n: 'EIw9li_ud1T3E4GIFW9vaQ2ukRCB7ZhDVqk9opt9F7pm',
+      s: 'ENPXp1vQzRF6JwIuS-mp2U8Uf1MoADoP_GqQ62VsDZWY'
+    }
+  },
+  r: {
+    d: '',
+    usageDisclaimer: {
+      l: 'Usage of a valid, unexpired, and non-revoked vLEI Credential, as defined in the associated Ecosystem Governance Framework, does not assert that the Legal Entity is trustworthy, honest, reputable in its business dealings, safe to do business with, or compliant with any laws or that an implied or expressly intended purpose will be fulfilled.'
+    },
+    issuanceDisclaimer: {
+      l: 'All information in a valid, unexpired, and non-revoked vLEI Credential, as defined in the associated Ecosystem Governance Framework, is accurate as of the date the validation process was complete. The vLEI Credential has been issued to the legal entity or person named in the vLEI Credential as the subject; and the qualified vLEI Issuer exercised reasonable care to perform the validation process set forth in the vLEI Ecosystem Governance Framework.'
+    }
+  }
+}
+OOR Auth credential created: EJSp8L2G9N7J0nvlG5XALa16itAuL83aYi5HyBuJxJ8w
+Grant message sent
+Grant result: {
+  name: 'exchange.EBeNIWT0m2nUeDoT8XNi3zTmVQ-XtzAxWFgORW_fE8ql',
+  metadata: { said: 'EBeNIWT0m2nUeDoT8XNi3zTmVQ-XtzAxWFgORW_fE8ql' },
+  done: true,
+  error: null,
+  response: { said: 'EBeNIWT0m2nUeDoT8XNi3zTmVQ-XtzAxWFgORW_fE8ql' }
+}
+OOR Auth credential info written to /task-data/oor-auth-credential-info.json
+Admitting OOR Auth ACDC with IPEX Grant SAID: EBeNIWT0m2nUeDoT8XNi3zTmVQ-XtzAxWFgORW_fE8ql
+AID "qvi" admitting IPEX grant "EBeNIWT0m2nUeDoT8XNi3zTmVQ-XtzAxWFgORW_fE8ql" from AID "ELTRPbnJqrJv_ymTGH08E_zC6jy6v92aMRJCJwUC5atl"...
+Successfully submitted IPEX admit for grant "EBeNIWT0m2nUeDoT8XNi3zTmVQ-XtzAxWFgORW_fE8ql".
+QVI IPEX Admit: EFlRQ3VeDF36CSpBY2cthNBZafkkRwRBQov329D3AwX_
+OOR Auth credential admitted: EIw9li_ud1T3E4GIFW9vaQ2ukRCB7ZhDVqk9opt9F7pm
+      → QVI issues OOR credential to Chief Sales Officer...
+        ✓ Using person: Chief Sales Officer, role: ChiefSalesOfficer, LEI: 3358004DXAMRWRUIYJ05 from configuration
+Creating OOR ACDC Credential
+Issuing OOR credential to EOk-6vJMLdXpcMFCgh_Z300eE1v6pzY15ba8S2vzJSbM for person Chief Sales Officer (ChiefSalesOfficer) with LEI 3358004DXAMRWRUIYJ05 (from parameters)
+Resolving schema OOBI http://schema:7723/oobi/EBNaNu-M9P5cgrnfl2Fvymy4E_jvxxyjb70PRtiANlJy
+Using OOR Auth credential SAID for edge: EJSp8L2G9N7J0nvlG5XALa16itAuL83aYi5HyBuJxJ8w
+Cred data: {
+  LEI: '3358004DXAMRWRUIYJ05',
+  personLegalName: 'Chief Sales Officer',
+  officialRole: 'ChiefSalesOfficer'
+}
+Credential data: {
+  i: 'EHY69UKBWhgPFiM5_LSYGC6dK_S_o8IqLmlOaodYN9Y3',
+  ri: 'EKvhOlWpebOqlen-F8OIcMwDamZ-hLVMfnFH6rWL9nQh',
+  s: 'EBNaNu-M9P5cgrnfl2Fvymy4E_jvxxyjb70PRtiANlJy',
+  a: {
+    i: 'EOk-6vJMLdXpcMFCgh_Z300eE1v6pzY15ba8S2vzJSbM',
+    dt: '2025-11-12T18:19:50.946000+00:00',
+    LEI: '3358004DXAMRWRUIYJ05',
+    personLegalName: 'Chief Sales Officer',
+    officialRole: 'ChiefSalesOfficer'
+  },
+  e: {
+    d: '',
+    auth: {
+      n: 'EJSp8L2G9N7J0nvlG5XALa16itAuL83aYi5HyBuJxJ8w',
+      s: 'EKA57bKBKxr_kN7iN5i7lMUxpMG-s19dRcmov1iDxz-E',
+      o: 'I2I'
+    }
+  },
+  r: {
+    d: '',
+    usageDisclaimer: {
+      l: 'Usage of a valid, unexpired, and non-revoked vLEI Credential, as defined in the associated Ecosystem Governance Framework, does not assert that the Legal Entity is trustworthy, honest, reputable in its business dealings, safe to do business with, or compliant with any laws or that an implied or expressly intended purpose will be fulfilled.'
+    },
+    issuanceDisclaimer: {
+      l: 'All information in a valid, unexpired, and non-revoked vLEI Credential, as defined in the associated Ecosystem Governance Framework, is accurate as of the date the validation process was complete. The vLEI Credential has been issued to the legal entity or person named in the vLEI Credential as the subject; and the qualified vLEI Issuer exercised reasonable care to perform the validation process set forth in the vLEI Ecosystem Governance Framework.'
+    }
+  }
+}
+OOR credential created: EHdW9GcLjHv5NJrfGkZmtA30pyC1ggG0phBmLctzoufv
+Grant message sent
+Grant result: {
+  name: 'exchange.EARK79TsCrCJKa_AOz1CxtMqMcAe7vhFQZ7Sz1zfuy20',
+  metadata: { said: 'EARK79TsCrCJKa_AOz1CxtMqMcAe7vhFQZ7Sz1zfuy20' },
+  done: true,
+  error: null,
+  response: { said: 'EARK79TsCrCJKa_AOz1CxtMqMcAe7vhFQZ7Sz1zfuy20' }
+}
+OOR credential info written to /task-data/oor-credential-info.json
+Admitting OOR ACDC with IPEX Grant SAID: EARK79TsCrCJKa_AOz1CxtMqMcAe7vhFQZ7Sz1zfuy20
+Using Person alias: Jupiter_Chief_Sales_Officer
+AID "Jupiter_Chief_Sales_Officer" admitting IPEX grant "EARK79TsCrCJKa_AOz1CxtMqMcAe7vhFQZ7Sz1zfuy20" from AID "EHY69UKBWhgPFiM5_LSYGC6dK_S_o8IqLmlOaodYN9Y3"...
+Successfully submitted IPEX admit for grant "EARK79TsCrCJKa_AOz1CxtMqMcAe7vhFQZ7Sz1zfuy20".
+Person IPEX Admit: EHCMtx_BWUZil2C99p8rlDn7fsAkEMy6rpmeiQQCZDY2
+OOR credential admitted: EHdW9GcLjHv5NJrfGkZmtA30pyC1ggG0phBmLctzoufv
+      → Person presents OOR credential to verifier...
+Presenting OOR ACDC to verifier Credential SAID: EHdW9GcLjHv5NJrfGkZmtA30pyC1ggG0phBmLctzoufv
+Using Person alias: Jupiter_Chief_Sales_Officer
+Finding matching credentials with filter: { '-d': 'EHdW9GcLjHv5NJrfGkZmtA30pyC1ggG0phBmLctzoufv' }
+Found 1 matching credentials.
+IPEX Granting credential EHdW9GcLjHv5NJrfGkZmtA30pyC1ggG0phBmLctzoufv to EMrjKv0T43sslqFfhlEHC9v3t9UoxHWrGznQ1EveRXUO...
+{ said: 'EK_0DwLG0Mt7ed891W0b3eHxKNbGt7IUQ46ya94Ig61D' }
+      ✓ OOR credential issued and presented for Chief Sales Officer
+
+      ╔═══════════════════════════════════════════════════════╗
+      ║  ✨ AGENT DELEGATION WORKFLOW                        ║
+      ╚═══════════════════════════════════════════════════════╝
+      → Processing 1 delegated agent(s)...
+
+        ┌─────────────────────────────────────────────────┐
+        │  Agent: jupiterSellerAgent
+        │  Type: AI
+        │  Delegated from: Jupiter_Chief_Sales_Officer
+        └─────────────────────────────────────────────────┘
+
+          [1/5] Creating agent delegation request...
+Creating agent delegation request: jupiterSellerAgent from Jupiter_Chief_Sales_Officer
+Creating agent jupiterSellerAgent as delegate of Jupiter_Chief_Sales_Officer
+OOR Holder AID: EOk-6vJMLdXpcMFCgh_Z300eE1v6pzY15ba8S2vzJSbM
+OOR Holder OOBI: http://keria:3902/oobi/EOk-6vJMLdXpcMFCgh_Z300eE1v6pzY15ba8S2vzJSbM/agent/EM-WC-_Ly3DxaLfgjPRMxK7FRPhzMr3NM-_MQSt1xb7H
+Agent delegation info written to /task-data/jupiterSellerAgent-delegate-info.json
+Agent AID: EGNlvZ3YwQ4BKsZm1Dvqyy9WbN2dQgDuyhXEXwo8TXYR
+ICP Operation: delegation.EGNlvZ3YwQ4BKsZm1Dvqyy9WbN2dQgDuyhXEXwo8TXYR
+Delegation request sent to Jupiter_Chief_Sales_Officer
+✓ Agent delegation request created
+   File: ./task-data/jupiterSellerAgent-delegate-info.json
+          [2/5] OOR Holder approves delegation...
+Approving agent delegation: jupiterSellerAgent by Jupiter_Chief_Sales_Officer
+Approving delegation from Jupiter_Chief_Sales_Officer to agent
+Agent AID: EGNlvZ3YwQ4BKsZm1Dvqyy9WbN2dQgDuyhXEXwo8TXYR
+OOR Holder Jupiter_Chief_Sales_Officer approved delegation of agent EGNlvZ3YwQ4BKsZm1Dvqyy9WbN2dQgDuyhXEXwo8TXYR: true
+✓ Agent delegation approved by Jupiter_Chief_Sales_Officer
+          [3/5] Agent completes delegation...
+Finishing delegation for agent: jupiterSellerAgent
+jupiterSellerAgent agent inception info {
+  aid: 'EGNlvZ3YwQ4BKsZm1Dvqyy9WbN2dQgDuyhXEXwo8TXYR',
+  icpOpName: 'delegation.EGNlvZ3YwQ4BKsZm1Dvqyy9WbN2dQgDuyhXEXwo8TXYR'
+}
+Finishing jupiterSellerAgent delegation by OOR Holder EOk-6vJMLdXpcMFCgh_Z300eE1v6pzY15ba8S2vzJSbM on op: delegation.EGNlvZ3YwQ4BKsZm1Dvqyy9WbN2dQgDuyhXEXwo8TXYR...
+Agent delegation data written to /task-data/jupiterSellerAgent-info.json
+✓ Agent delegation completed
+   File: ./task-data/jupiterSellerAgent-info.json
+   Agent AID: EGNlvZ3YwQ4BKsZm1Dvqyy9WbN2dQgDuyhXEXwo8TXYR
+   Agent OOBI: http://keria:3902/oobi/EGNlvZ3YwQ4BKsZm1Dvqyy9WbN2dQgDuyhXEXwo8TXYR/agent/EC1cOj4MgzTVsajhy2-g6BCiWbD0ZUmfsxGDwRuV724E
+          [4/5] Agent resolves OOBIs...
+            → Resolving QVI OOBI...
+Agent jupiterSellerAgent resolving QVI OOBI
+Agent jupiterSellerAgent resolving QVI OOBI: http://keria:3902/oobi/EHY69UKBWhgPFiM5_LSYGC6dK_S_o8IqLmlOaodYN9Y3/agent/EKqCScrdj54j3OFHrMwI1Ra1V2t4LGRc1jyxYSWRlBlG
+OOBI Resolved: http://keria:3902/oobi/EHY69UKBWhgPFiM5_LSYGC6dK_S_o8IqLmlOaodYN9Y3/agent/EKqCScrdj54j3OFHrMwI1Ra1V2t4LGRc1jyxYSWRlBlG
+✓ QVI OOBI resolved by agent jupiterSellerAgent
+            → Resolving LE OOBI...
+Agent jupiterSellerAgent resolving LE OOBI for Jupiter_Knitting_Company
+Agent jupiterSellerAgent resolving LE OOBI: http://keria:3902/oobi/ELTRPbnJqrJv_ymTGH08E_zC6jy6v92aMRJCJwUC5atl/agent/EHRsBJlugk4A-drDBxSDmudhjla2-fWrh82_uOkMXxFp
+OOBI Resolved: http://keria:3902/oobi/ELTRPbnJqrJv_ymTGH08E_zC6jy6v92aMRJCJwUC5atl/agent/EHRsBJlugk4A-drDBxSDmudhjla2-fWrh82_uOkMXxFp
+✓ LE OOBI resolved by agent jupiterSellerAgent
+            → Resolving Sally verifier OOBI...
+Agent jupiterSellerAgent resolving Sally verifier OOBI
+Agent jupiterSellerAgent resolving Verifier (Sally) OOBI: http://verifier:9723/oobi
+OOBI Resolved: http://verifier:9723/oobi
+✓ Verifier OOBI resolved by agent jupiterSellerAgent
+          [5/5] Verifying agent delegation via Sally...
+Verifying agent delegation via Sally
+  Agent: jupiterSellerAgent
+  OOR Holder: Jupiter_Chief_Sales_Officer
+WARN[0000] The "GEDA_PRE" variable is not set. Defaulting to a blank string. 
+Verifying delegation for agent jupiterSellerAgent
+Agent AID: EGNlvZ3YwQ4BKsZm1Dvqyy9WbN2dQgDuyhXEXwo8TXYR
+OOR Holder AID: EOk-6vJMLdXpcMFCgh_Z300eE1v6pzY15ba8S2vzJSbM
+Calling Sally verifier at http://vlei-verification:9723/verify/agent-delegation
+
+============================================================
+SALLY VERIFICATION RESULT
+============================================================
+{
+  "valid": true,
+  "verified": true,
+  "controller_aid": "EOk-6vJMLdXpcMFCgh_Z300eE1v6pzY15ba8S2vzJSbM",
+  "agent_aid": "EGNlvZ3YwQ4BKsZm1Dvqyy9WbN2dQgDuyhXEXwo8TXYR",
+  "oor_holder_aid": "EOk-6vJMLdXpcMFCgh_Z300eE1v6pzY15ba8S2vzJSbM",
+  "message": "Agent delegation verified successfully",
+  "verification": {
+    "delegation_verified": true,
+    "kel_verification": null
+  }
+}
+============================================================
+
+✓ Agent delegation verified successfully
+  Agent: jupiterSellerAgent (EGNlvZ3YwQ4BKsZm1Dvqyy9WbN2dQgDuyhXEXwo8TXYR)
+  Delegated from: Jupiter_Chief_Sales_Officer (EOk-6vJMLdXpcMFCgh_Z300eE1v6pzY15ba8S2vzJSbM)
+          ✓ Agent jupiterSellerAgent delegation complete and verified
+          Agent AID: EGNlvZ3YwQ4BKsZm1Dvqyy9WbN2dQgDuyhXEXwo8TXYR
+
+      ✓ All agents processed for Chief Sales Officer
+
+  ✓ All persons processed for JUPITER KNITTING COMPANY
+
+╔════════════════════════════════════════════════════════════════╗
+║  Organization: TOMMY HILFIGER EUROPE B.V.
+║  LEI: 54930012QJWZMYHNJW95
+║  Alias: Tommy_Hilfiger_Europe
+║  Persons: 1
+╚════════════════════════════════════════════════════════════════╝
+
+  → Creating LE AID for TOMMY HILFIGER EUROPE B.V....
+Creating LE AID using SignifyTS and KERIA
+Using alias: Tommy_Hilfiger_Europe
+LE info written to /task-data/le-*
+   Prefix: EDle1UfWC3c0VtjtmcNJLG6Aet5ZH-YscjZ-GswP2jsD
+   OOBI: http://keria:3902/oobi/EDle1UfWC3c0VtjtmcNJLG6Aet5ZH-YscjZ-GswP2jsD/agent/EHRsBJlugk4A-drDBxSDmudhjla2-fWrh82_uOkMXxFp
+   Prefix: EDle1UfWC3c0VtjtmcNJLG6Aet5ZH-YscjZ-GswP2jsD
+   OOBI: http://keria:3902/oobi/EDle1UfWC3c0VtjtmcNJLG6Aet5ZH-YscjZ-GswP2jsD/agent/EHRsBJlugk4A-drDBxSDmudhjla2-fWrh82_uOkMXxFp
+  → Resolving OOBI between LE and QVI...
+LE Resolving QVI OOBI: http://keria:3902/oobi/EHY69UKBWhgPFiM5_LSYGC6dK_S_o8IqLmlOaodYN9Y3/agent/EKqCScrdj54j3OFHrMwI1Ra1V2t4LGRc1jyxYSWRlBlG
+OOBI Resolved: http://keria:3902/oobi/EHY69UKBWhgPFiM5_LSYGC6dK_S_o8IqLmlOaodYN9Y3/agent/EKqCScrdj54j3OFHrMwI1Ra1V2t4LGRc1jyxYSWRlBlG
+QVI Resolving LE OOBI: http://keria:3902/oobi/EDle1UfWC3c0VtjtmcNJLG6Aet5ZH-YscjZ-GswP2jsD/agent/EHRsBJlugk4A-drDBxSDmudhjla2-fWrh82_uOkMXxFp
+OOBI Resolved: http://keria:3902/oobi/EDle1UfWC3c0VtjtmcNJLG6Aet5ZH-YscjZ-GswP2jsD/agent/EHRsBJlugk4A-drDBxSDmudhjla2-fWrh82_uOkMXxFp
+  → Creating QVI registry for LE credentials...
+Creating registry in QVI AID
+Registry "qvi-le-registry" already exists under AID "qvi". Skipping creation.
+Registry info written to /task-data/qvi-registry-info.json
+  → Issuing LE credential to TOMMY HILFIGER EUROPE B.V....
+    ✓ Using LEI 54930012QJWZMYHNJW95 from configuration
+Creating LE ACDC Credential
+Issuing LE credential to EDle1UfWC3c0VtjtmcNJLG6Aet5ZH-YscjZ-GswP2jsD with LEI 54930012QJWZMYHNJW95 (from parameter)
+Resolving schema OOBI http://schema:7723/oobi/ENPXp1vQzRF6JwIuS-mp2U8Uf1MoADoP_GqQ62VsDZWY
+Using QVI credential SAID for edge: ENuwXy6UlIfws769qX8eeeBkTjPb95fSVKV1McR_NZAK
+Issuing LE credential schema ENPXp1vQzRF6JwIuS-mp2U8Uf1MoADoP_GqQ62VsDZWY to EDle1UfWC3c0VtjtmcNJLG6Aet5ZH-YscjZ-GswP2jsD
+Cred data: { LEI: '54930012QJWZMYHNJW95' }
+Cred data: { LEI: '54930012QJWZMYHNJW95' }
+Credential data: {
+  i: 'EHY69UKBWhgPFiM5_LSYGC6dK_S_o8IqLmlOaodYN9Y3',
+  ri: 'EKvhOlWpebOqlen-F8OIcMwDamZ-hLVMfnFH6rWL9nQh',
+  s: 'ENPXp1vQzRF6JwIuS-mp2U8Uf1MoADoP_GqQ62VsDZWY',
+  a: {
+    i: 'EDle1UfWC3c0VtjtmcNJLG6Aet5ZH-YscjZ-GswP2jsD',
+    dt: '2025-11-12T18:21:01.429000+00:00',
+    LEI: '54930012QJWZMYHNJW95'
+  },
+  e: {
+    d: '',
+    qvi: {
+      n: 'ENuwXy6UlIfws769qX8eeeBkTjPb95fSVKV1McR_NZAK',
+      s: 'EBfdlu8R27Fbx-ehrqwImnK-8Cm79sqbAQ4MmvEAYqao'
+    }
+  },
+  r: {
+    d: '',
+    usageDisclaimer: {
+      l: 'Usage of a valid, unexpired, and non-revoked vLEI Credential, as defined in the associated Ecosystem Governance Framework, does not assert that the Legal Entity is trustworthy, honest, reputable in its business dealings, safe to do business with, or compliant with any laws or that an implied or expressly intended purpose will be fulfilled.'
+    },
+    issuanceDisclaimer: {
+      l: 'All information in a valid, unexpired, and non-revoked vLEI Credential, as defined in the associated Ecosystem Governance Framework, is accurate as of the date the validation process was complete. The vLEI Credential has been issued to the legal entity or person named in the vLEI Credential as the subject; and the qualified vLEI Issuer exercised reasonable care to perform the validation process set forth in the vLEI Ecosystem Governance Framework.'
+    }
+  }
+}
+LE credential created: EIJWt8Bp9LN9yImINDJ1y-_6dp0-l1RxB4b3nl-gr4Bk
+IPEX Granting credential to issuee: EDle1UfWC3c0VtjtmcNJLG6Aet5ZH-YscjZ-GswP2jsD
+Grant message sent
+Grant message sent
+Grant result: {
+  name: 'exchange.EDes9am1hQgd2hNmPt25KJBjGjkLhVdHEoaWTHqfsOvc',
+  metadata: { said: 'EDes9am1hQgd2hNmPt25KJBjGjkLhVdHEoaWTHqfsOvc' },
+  done: true,
+  error: null,
+  response: { said: 'EDes9am1hQgd2hNmPt25KJBjGjkLhVdHEoaWTHqfsOvc' }
+}
+LE credential info written to /task-data/le-credential-info.json
+Admitting LE ACDC with IPEX Grant SAID: EDes9am1hQgd2hNmPt25KJBjGjkLhVdHEoaWTHqfsOvc
+Using LE alias: Tommy_Hilfiger_Europe
+AID "Tommy_Hilfiger_Europe" admitting IPEX grant "EDes9am1hQgd2hNmPt25KJBjGjkLhVdHEoaWTHqfsOvc" from AID "EHY69UKBWhgPFiM5_LSYGC6dK_S_o8IqLmlOaodYN9Y3"...
+Successfully submitted IPEX admit for grant "EDes9am1hQgd2hNmPt25KJBjGjkLhVdHEoaWTHqfsOvc".
+LE IPEX Admit: EJfAc01AdaXYTgWMjOhL8hVZb0Fwh34pB22jxdAcMqG2
+LE credential admitted: EIJWt8Bp9LN9yImINDJ1y-_6dp0-l1RxB4b3nl-gr4Bk
+  → LE presents credential to verifier...
+LE Resolving Verifier (Sally) OOBI: 
+OOBI Resolved: http://verifier:9723/oobi
+Presenting LE ACDC to verifier Credential SAID: EIJWt8Bp9LN9yImINDJ1y-_6dp0-l1RxB4b3nl-gr4Bk
+Using LE alias: Tommy_Hilfiger_Europe
+Finding matching credentials with filter: { '-d': 'EIJWt8Bp9LN9yImINDJ1y-_6dp0-l1RxB4b3nl-gr4Bk' }
+Found 1 matching credentials.
+IPEX Granting credential EIJWt8Bp9LN9yImINDJ1y-_6dp0-l1RxB4b3nl-gr4Bk to EMrjKv0T43sslqFfhlEHC9v3t9UoxHWrGznQ1EveRXUO...
+{ said: 'EGfrh0369D1dEOsZ6nEPTtOgp7hQi0R3dr8LvLVSwuJg' }
+  ✓ LE credential issued and presented for TOMMY HILFIGER EUROPE B.V.
+
+  [4/5] Processing Persons for TOMMY HILFIGER EUROPE B.V....
+
+    ┌──────────────────────────────────────────────────────┐
+    │  Person: Chief Procurement Officer
+    │  Role: ChiefProcurementOfficer
+    │  Alias: Tommy_Chief_Procurement_Officer
+    └──────────────────────────────────────────────────────┘
+
+      → Creating Person AID...
+Creating Person AID using SignifyTS and KERIA
+Using alias: Tommy_Chief_Procurement_Officer
+Person info written to /task-data/Tommy_Chief_Procurement_Officer-*
+   Prefix: ECYBV-U_-tFDIu4yIjnKDdcGxRaS_12BlKRk2iOYiWfH
+   OOBI: http://keria:3902/oobi/ECYBV-U_-tFDIu4yIjnKDdcGxRaS_12BlKRk2iOYiWfH/agent/EM-WC-_Ly3DxaLfgjPRMxK7FRPhzMr3NM-_MQSt1xb7H
+   Prefix: ECYBV-U_-tFDIu4yIjnKDdcGxRaS_12BlKRk2iOYiWfH
+   OOBI: http://keria:3902/oobi/ECYBV-U_-tFDIu4yIjnKDdcGxRaS_12BlKRk2iOYiWfH/agent/EM-WC-_Ly3DxaLfgjPRMxK7FRPhzMr3NM-_MQSt1xb7H
+      → Resolving OOBIs for Person...
+Person Resolving LE OOBI: http://keria:3902/oobi/EDle1UfWC3c0VtjtmcNJLG6Aet5ZH-YscjZ-GswP2jsD/agent/EHRsBJlugk4A-drDBxSDmudhjla2-fWrh82_uOkMXxFp
+OOBI Resolved: http://keria:3902/oobi/EDle1UfWC3c0VtjtmcNJLG6Aet5ZH-YscjZ-GswP2jsD/agent/EHRsBJlugk4A-drDBxSDmudhjla2-fWrh82_uOkMXxFp
+LE Resolving Person OOBI: http://keria:3902/oobi/ECYBV-U_-tFDIu4yIjnKDdcGxRaS_12BlKRk2iOYiWfH/agent/EM-WC-_Ly3DxaLfgjPRMxK7FRPhzMr3NM-_MQSt1xb7H
+OOBI Resolved: http://keria:3902/oobi/ECYBV-U_-tFDIu4yIjnKDdcGxRaS_12BlKRk2iOYiWfH/agent/EM-WC-_Ly3DxaLfgjPRMxK7FRPhzMr3NM-_MQSt1xb7H
+QVI Resolving Person OOBI: http://keria:3902/oobi/ECYBV-U_-tFDIu4yIjnKDdcGxRaS_12BlKRk2iOYiWfH/agent/EM-WC-_Ly3DxaLfgjPRMxK7FRPhzMr3NM-_MQSt1xb7H
+OOBI Resolved: http://keria:3902/oobi/ECYBV-U_-tFDIu4yIjnKDdcGxRaS_12BlKRk2iOYiWfH/agent/EM-WC-_Ly3DxaLfgjPRMxK7FRPhzMr3NM-_MQSt1xb7H
+Person Resolving QVI OOBI: http://keria:3902/oobi/EHY69UKBWhgPFiM5_LSYGC6dK_S_o8IqLmlOaodYN9Y3/agent/EKqCScrdj54j3OFHrMwI1Ra1V2t4LGRc1jyxYSWRlBlG
+OOBI Resolved: http://keria:3902/oobi/EHY69UKBWhgPFiM5_LSYGC6dK_S_o8IqLmlOaodYN9Y3/agent/EKqCScrdj54j3OFHrMwI1Ra1V2t4LGRc1jyxYSWRlBlG
+Person Resolving Verifier (Sally) OOBI: 
+OOBI Resolved: http://verifier:9723/oobi
+      → Creating LE registry for OOR credentials...
+Creating registry in LE AID
+Using LE alias: Tommy_Hilfiger_Europe
+Creating registry: Tommy_Hilfiger_Europe-oor-registry
+Successfully created credential registry: EACUPrH5KygrSNYgv2xzykAcYJFdIaMyVjQOagEP0RWz
+Registry info written to /task-data/le-registry-info.json
+      → LE issues OOR_AUTH credential for Chief Procurement Officer...
+        ✓ Using person: Chief Procurement Officer, role: ChiefProcurementOfficer, LEI: 54930012QJWZMYHNJW95 from configuration
+Creating OOR Auth ACDC Credential
+Issuing OOR Auth credential to EHY69UKBWhgPFiM5_LSYGC6dK_S_o8IqLmlOaodYN9Y3 for person Chief Procurement Officer (ChiefProcurementOfficer) with LEI 54930012QJWZMYHNJW95 (from parameters)
+Using LE alias: Tommy_Hilfiger_Europe
+Using registry: Tommy_Hilfiger_Europe-oor-registry
+Resolving schema OOBI http://schema:7723/oobi/EKA57bKBKxr_kN7iN5i7lMUxpMG-s19dRcmov1iDxz-E
+Using LE credential SAID for edge: EIJWt8Bp9LN9yImINDJ1y-_6dp0-l1RxB4b3nl-gr4Bk
+Cred data: {
+  AID: 'ECYBV-U_-tFDIu4yIjnKDdcGxRaS_12BlKRk2iOYiWfH',
+  LEI: '54930012QJWZMYHNJW95',
+  personLegalName: 'Chief Procurement Officer',
+  officialRole: 'ChiefProcurementOfficer'
+}
+Credential data: {
+  i: 'EDle1UfWC3c0VtjtmcNJLG6Aet5ZH-YscjZ-GswP2jsD',
+  ri: 'EACUPrH5KygrSNYgv2xzykAcYJFdIaMyVjQOagEP0RWz',
+  s: 'EKA57bKBKxr_kN7iN5i7lMUxpMG-s19dRcmov1iDxz-E',
+  a: {
+    i: 'EHY69UKBWhgPFiM5_LSYGC6dK_S_o8IqLmlOaodYN9Y3',
+    dt: '2025-11-12T18:21:54.167000+00:00',
+    AID: 'ECYBV-U_-tFDIu4yIjnKDdcGxRaS_12BlKRk2iOYiWfH',
+    LEI: '54930012QJWZMYHNJW95',
+    personLegalName: 'Chief Procurement Officer',
+    officialRole: 'ChiefProcurementOfficer'
+  },
+  e: {
+    d: '',
+    le: {
+      n: 'EIJWt8Bp9LN9yImINDJ1y-_6dp0-l1RxB4b3nl-gr4Bk',
+      s: 'ENPXp1vQzRF6JwIuS-mp2U8Uf1MoADoP_GqQ62VsDZWY'
+    }
+  },
+  r: {
+    d: '',
+    usageDisclaimer: {
+      l: 'Usage of a valid, unexpired, and non-revoked vLEI Credential, as defined in the associated Ecosystem Governance Framework, does not assert that the Legal Entity is trustworthy, honest, reputable in its business dealings, safe to do business with, or compliant with any laws or that an implied or expressly intended purpose will be fulfilled.'
+    },
+    issuanceDisclaimer: {
+      l: 'All information in a valid, unexpired, and non-revoked vLEI Credential, as defined in the associated Ecosystem Governance Framework, is accurate as of the date the validation process was complete. The vLEI Credential has been issued to the legal entity or person named in the vLEI Credential as the subject; and the qualified vLEI Issuer exercised reasonable care to perform the validation process set forth in the vLEI Ecosystem Governance Framework.'
+    }
+  }
+}
+OOR Auth credential created: EFJqMfwJN1NnV5bpA9oPo7gRsxZEDxoZ-Bl4L_BLPwvG
+Grant message sent
+Grant result: {
+  name: 'exchange.EJkaRK9JUHT6Om6oHQyDayyQu_7QHMVvt0OEoGpbXaGx',
+  metadata: { said: 'EJkaRK9JUHT6Om6oHQyDayyQu_7QHMVvt0OEoGpbXaGx' },
+  done: true,
+  error: null,
+  response: { said: 'EJkaRK9JUHT6Om6oHQyDayyQu_7QHMVvt0OEoGpbXaGx' }
+}
+OOR Auth credential info written to /task-data/oor-auth-credential-info.json
+Admitting OOR Auth ACDC with IPEX Grant SAID: EJkaRK9JUHT6Om6oHQyDayyQu_7QHMVvt0OEoGpbXaGx
+AID "qvi" admitting IPEX grant "EJkaRK9JUHT6Om6oHQyDayyQu_7QHMVvt0OEoGpbXaGx" from AID "EDle1UfWC3c0VtjtmcNJLG6Aet5ZH-YscjZ-GswP2jsD"...
+Successfully submitted IPEX admit for grant "EJkaRK9JUHT6Om6oHQyDayyQu_7QHMVvt0OEoGpbXaGx".
+QVI IPEX Admit: EP8UkLvixGb8Zg_VCTMaZiIqIwjF9v8vJjuo6cRvn1pk
+OOR Auth credential admitted: EFJqMfwJN1NnV5bpA9oPo7gRsxZEDxoZ-Bl4L_BLPwvG
+      → QVI issues OOR credential to Chief Procurement Officer...
+        ✓ Using person: Chief Procurement Officer, role: ChiefProcurementOfficer, LEI: 54930012QJWZMYHNJW95 from configuration
+Creating OOR ACDC Credential
+Issuing OOR credential to ECYBV-U_-tFDIu4yIjnKDdcGxRaS_12BlKRk2iOYiWfH for person Chief Procurement Officer (ChiefProcurementOfficer) with LEI 54930012QJWZMYHNJW95 (from parameters)
+Resolving schema OOBI http://schema:7723/oobi/EBNaNu-M9P5cgrnfl2Fvymy4E_jvxxyjb70PRtiANlJy
+Using OOR Auth credential SAID for edge: EFJqMfwJN1NnV5bpA9oPo7gRsxZEDxoZ-Bl4L_BLPwvG
+Cred data: {
+  LEI: '54930012QJWZMYHNJW95',
+  personLegalName: 'Chief Procurement Officer',
+  officialRole: 'ChiefProcurementOfficer'
+}
+Credential data: {
+  i: 'EHY69UKBWhgPFiM5_LSYGC6dK_S_o8IqLmlOaodYN9Y3',
+  ri: 'EKvhOlWpebOqlen-F8OIcMwDamZ-hLVMfnFH6rWL9nQh',
+  s: 'EBNaNu-M9P5cgrnfl2Fvymy4E_jvxxyjb70PRtiANlJy',
+  a: {
+    i: 'ECYBV-U_-tFDIu4yIjnKDdcGxRaS_12BlKRk2iOYiWfH',
+    dt: '2025-11-12T18:22:04.854000+00:00',
+    LEI: '54930012QJWZMYHNJW95',
+    personLegalName: 'Chief Procurement Officer',
+    officialRole: 'ChiefProcurementOfficer'
+  },
+  e: {
+    d: '',
+    auth: {
+      n: 'EFJqMfwJN1NnV5bpA9oPo7gRsxZEDxoZ-Bl4L_BLPwvG',
+      s: 'EKA57bKBKxr_kN7iN5i7lMUxpMG-s19dRcmov1iDxz-E',
+      o: 'I2I'
+    }
+  },
+  r: {
+    d: '',
+    usageDisclaimer: {
+      l: 'Usage of a valid, unexpired, and non-revoked vLEI Credential, as defined in the associated Ecosystem Governance Framework, does not assert that the Legal Entity is trustworthy, honest, reputable in its business dealings, safe to do business with, or compliant with any laws or that an implied or expressly intended purpose will be fulfilled.'
+    },
+    issuanceDisclaimer: {
+      l: 'All information in a valid, unexpired, and non-revoked vLEI Credential, as defined in the associated Ecosystem Governance Framework, is accurate as of the date the validation process was complete. The vLEI Credential has been issued to the legal entity or person named in the vLEI Credential as the subject; and the qualified vLEI Issuer exercised reasonable care to perform the validation process set forth in the vLEI Ecosystem Governance Framework.'
+    }
+  }
+}
+OOR credential created: EPv-YO4FhNQUl-u0Wt01fnqMqiu-UzF9CiE-948BhphZ
+Grant message sent
+Grant result: {
+  name: 'exchange.EGoB-9shgtydXLm1_PY1z1fO2QcTfBMbGuz8MfZvx-Ff',
+  metadata: { said: 'EGoB-9shgtydXLm1_PY1z1fO2QcTfBMbGuz8MfZvx-Ff' },
+  done: true,
+  error: null,
+  response: { said: 'EGoB-9shgtydXLm1_PY1z1fO2QcTfBMbGuz8MfZvx-Ff' }
+}
+OOR credential info written to /task-data/oor-credential-info.json
+Admitting OOR ACDC with IPEX Grant SAID: EGoB-9shgtydXLm1_PY1z1fO2QcTfBMbGuz8MfZvx-Ff
+Using Person alias: Tommy_Chief_Procurement_Officer
+AID "Tommy_Chief_Procurement_Officer" admitting IPEX grant "EGoB-9shgtydXLm1_PY1z1fO2QcTfBMbGuz8MfZvx-Ff" from AID "EHY69UKBWhgPFiM5_LSYGC6dK_S_o8IqLmlOaodYN9Y3"...
+Successfully submitted IPEX admit for grant "EGoB-9shgtydXLm1_PY1z1fO2QcTfBMbGuz8MfZvx-Ff".
+Person IPEX Admit: ECN1SlwdCzNUfdGPP115nOKiUDzw-gGog3D6GxixY463
+OOR credential admitted: EFJqMfwJN1NnV5bpA9oPo7gRsxZEDxoZ-Bl4L_BLPwvG
+      → Person presents OOR credential to verifier...
+Presenting OOR ACDC to verifier Credential SAID: EPv-YO4FhNQUl-u0Wt01fnqMqiu-UzF9CiE-948BhphZ
+Using Person alias: Tommy_Chief_Procurement_Officer
+Finding matching credentials with filter: { '-d': 'EPv-YO4FhNQUl-u0Wt01fnqMqiu-UzF9CiE-948BhphZ' }
+Found 1 matching credentials.
+IPEX Granting credential EPv-YO4FhNQUl-u0Wt01fnqMqiu-UzF9CiE-948BhphZ to EMrjKv0T43sslqFfhlEHC9v3t9UoxHWrGznQ1EveRXUO...
+{ said: 'EDhymJjq-qUD3G1xiV6afMvK7Z2RH8IBJOems6EwijeX' }
+      ✓ OOR credential issued and presented for Chief Procurement Officer
+
+      ╔═══════════════════════════════════════════════════════╗
+      ║  ✨ AGENT DELEGATION WORKFLOW                        ║
+      ╚═══════════════════════════════════════════════════════╝
+      → Processing 1 delegated agent(s)...
+
+        ┌─────────────────────────────────────────────────┐
+        │  Agent: tommyBuyerAgent
+        │  Type: AI
+        │  Delegated from: Tommy_Chief_Procurement_Officer
+        └─────────────────────────────────────────────────┘
+
+          [1/5] Creating agent delegation request...
+Creating agent delegation request: tommyBuyerAgent from Tommy_Chief_Procurement_Officer
+Creating agent tommyBuyerAgent as delegate of Tommy_Chief_Procurement_Officer
+OOR Holder AID: ECYBV-U_-tFDIu4yIjnKDdcGxRaS_12BlKRk2iOYiWfH
+OOR Holder OOBI: http://keria:3902/oobi/ECYBV-U_-tFDIu4yIjnKDdcGxRaS_12BlKRk2iOYiWfH/agent/EM-WC-_Ly3DxaLfgjPRMxK7FRPhzMr3NM-_MQSt1xb7H
+Agent delegation info written to /task-data/tommyBuyerAgent-delegate-info.json
+Agent AID: EJ85rCwPuMImI_kBFiJ4Ar0MmDZySy5WYCWugOnXpAQL
+ICP Operation: delegation.EJ85rCwPuMImI_kBFiJ4Ar0MmDZySy5WYCWugOnXpAQL
+Delegation request sent to Tommy_Chief_Procurement_Officer
+✓ Agent delegation request created
+   File: ./task-data/tommyBuyerAgent-delegate-info.json
+          [2/5] OOR Holder approves delegation...
+Approving agent delegation: tommyBuyerAgent by Tommy_Chief_Procurement_Officer
+Approving delegation from Tommy_Chief_Procurement_Officer to agent
+Agent AID: EJ85rCwPuMImI_kBFiJ4Ar0MmDZySy5WYCWugOnXpAQL
+OOR Holder Tommy_Chief_Procurement_Officer approved delegation of agent EJ85rCwPuMImI_kBFiJ4Ar0MmDZySy5WYCWugOnXpAQL: true
+✓ Agent delegation approved by Tommy_Chief_Procurement_Officer
+          [3/5] Agent completes delegation...
+Finishing delegation for agent: tommyBuyerAgent
+tommyBuyerAgent agent inception info {
+  aid: 'EJ85rCwPuMImI_kBFiJ4Ar0MmDZySy5WYCWugOnXpAQL',
+  icpOpName: 'delegation.EJ85rCwPuMImI_kBFiJ4Ar0MmDZySy5WYCWugOnXpAQL'
+}
+Finishing tommyBuyerAgent delegation by OOR Holder ECYBV-U_-tFDIu4yIjnKDdcGxRaS_12BlKRk2iOYiWfH on op: delegation.EJ85rCwPuMImI_kBFiJ4Ar0MmDZySy5WYCWugOnXpAQL...
+Agent delegation data written to /task-data/tommyBuyerAgent-info.json
+✓ Agent delegation completed
+   File: ./task-data/tommyBuyerAgent-info.json
+   Agent AID: EJ85rCwPuMImI_kBFiJ4Ar0MmDZySy5WYCWugOnXpAQL
+   Agent OOBI: http://keria:3902/oobi/EJ85rCwPuMImI_kBFiJ4Ar0MmDZySy5WYCWugOnXpAQL/agent/EC1cOj4MgzTVsajhy2-g6BCiWbD0ZUmfsxGDwRuV724E
+          [4/5] Agent resolves OOBIs...
+            → Resolving QVI OOBI...
+Agent tommyBuyerAgent resolving QVI OOBI
+Agent tommyBuyerAgent resolving QVI OOBI: http://keria:3902/oobi/EHY69UKBWhgPFiM5_LSYGC6dK_S_o8IqLmlOaodYN9Y3/agent/EKqCScrdj54j3OFHrMwI1Ra1V2t4LGRc1jyxYSWRlBlG
+OOBI Resolved: http://keria:3902/oobi/EHY69UKBWhgPFiM5_LSYGC6dK_S_o8IqLmlOaodYN9Y3/agent/EKqCScrdj54j3OFHrMwI1Ra1V2t4LGRc1jyxYSWRlBlG
+✓ QVI OOBI resolved by agent tommyBuyerAgent
+            → Resolving LE OOBI...
+Agent tommyBuyerAgent resolving LE OOBI for Tommy_Hilfiger_Europe
+Agent tommyBuyerAgent resolving LE OOBI: http://keria:3902/oobi/EDle1UfWC3c0VtjtmcNJLG6Aet5ZH-YscjZ-GswP2jsD/agent/EHRsBJlugk4A-drDBxSDmudhjla2-fWrh82_uOkMXxFp
+OOBI Resolved: http://keria:3902/oobi/EDle1UfWC3c0VtjtmcNJLG6Aet5ZH-YscjZ-GswP2jsD/agent/EHRsBJlugk4A-drDBxSDmudhjla2-fWrh82_uOkMXxFp
+✓ LE OOBI resolved by agent tommyBuyerAgent
+            → Resolving Sally verifier OOBI...
+Agent tommyBuyerAgent resolving Sally verifier OOBI
+Agent tommyBuyerAgent resolving Verifier (Sally) OOBI: http://verifier:9723/oobi
+OOBI Resolved: http://verifier:9723/oobi
+✓ Verifier OOBI resolved by agent tommyBuyerAgent
+          [5/5] Verifying agent delegation via Sally...
+Verifying agent delegation via Sally
+  Agent: tommyBuyerAgent
+  OOR Holder: Tommy_Chief_Procurement_Officer
+WARN[0000] The "GEDA_PRE" variable is not set. Defaulting to a blank string. 
+Verifying delegation for agent tommyBuyerAgent
+Agent AID: EJ85rCwPuMImI_kBFiJ4Ar0MmDZySy5WYCWugOnXpAQL
+OOR Holder AID: ECYBV-U_-tFDIu4yIjnKDdcGxRaS_12BlKRk2iOYiWfH
+Calling Sally verifier at http://vlei-verification:9723/verify/agent-delegation
+
+============================================================
+SALLY VERIFICATION RESULT
+============================================================
+{
+  "valid": true,
+  "verified": true,
+  "controller_aid": "ECYBV-U_-tFDIu4yIjnKDdcGxRaS_12BlKRk2iOYiWfH",
+  "agent_aid": "EJ85rCwPuMImI_kBFiJ4Ar0MmDZySy5WYCWugOnXpAQL",
+  "oor_holder_aid": "ECYBV-U_-tFDIu4yIjnKDdcGxRaS_12BlKRk2iOYiWfH",
+  "message": "Agent delegation verified successfully",
+  "verification": {
+    "delegation_verified": true,
+    "kel_verification": null
+  }
+}
+============================================================
+
+✓ Agent delegation verified successfully
+  Agent: tommyBuyerAgent (EJ85rCwPuMImI_kBFiJ4Ar0MmDZySy5WYCWugOnXpAQL)
+  Delegated from: Tommy_Chief_Procurement_Officer (ECYBV-U_-tFDIu4yIjnKDdcGxRaS_12BlKRk2iOYiWfH)
+          ✓ Agent tommyBuyerAgent delegation complete and verified
+          Agent AID: EJ85rCwPuMImI_kBFiJ4Ar0MmDZySy5WYCWugOnXpAQL
+
+      ✓ All agents processed for Chief Procurement Officer
+
+  ✓ All persons processed for TOMMY HILFIGER EUROPE B.V.
+
+✓ All organizations processed
+
+[5/5] Generating Trust Tree Visualization...
+
+✓ Trust tree visualization created: ./task-data/trust-tree-buyerseller.txt
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    vLEI Trust Chain - Buyer-Seller Scenario                 ║
+║                Configuration-Driven System with Agent Delegation             ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+ROOT (GLEIF External AID)
+│
+├─ QVI (Qualified vLEI Issuer)
+│   │
+│   ├─ QVI Credential (issued by GLEIF ROOT)
+│   │   └─ Presented to Sally Verifier ✓
+│   │
+│   ├─── JUPITER KNITTING COMPANY (Seller)
+│   │     LEI: 3358004DXAMRWRUIYJ05
+│   │     │
+│   │     ├─ LE Credential (issued by QVI)
+│   │     │   └─ Presented to Sally Verifier ✓
+│   │     │
+│   │     └─ Chief Sales Officer
+│   │         │
+│   │         ├─ OOR_AUTH Credential (issued by LE to QVI)
+│   │         │   └─ Admitted by QVI ✓
+│   │         │
+│   │         ├─ OOR Credential (issued by QVI to Person)
+│   │         │   ├─ Chained to: LE Credential
+│   │         │   └─ Presented to Sally Verifier ✓
+│   │         │
+│   │         └─ ✨ Delegated Agent: jupiterSellerAgent (AI Agent)
+│   │             ├─ Agent AID (Delegated from OOR Holder)
+│   │             ├─ KEL Seal (Anchored in OOR Holder's KEL)
+│   │             ├─ OOBI Resolved (QVI, LE, Sally)
+│   │             └─ ✓ Verified by Sally Verifier
+│   │
+│   └─── TOMMY HILFIGER EUROPE B.V. (Buyer)
+│         LEI: 54930012QJWZMYHNJW95
+│         │
+│         ├─ LE Credential (issued by QVI)
+│         │   └─ Presented to Sally Verifier ✓
+│         │
+│         └─ Chief Procurement Officer
+│             │
+│             ├─ OOR_AUTH Credential (issued by LE to QVI)
+│             │   └─ Admitted by QVI ✓
+│             │
+│             ├─ OOR Credential (issued by QVI to Person)
+│             │   ├─ Chained to: LE Credential
+│             │   └─ Presented to Sally Verifier ✓
+│             │
+│             └─ ✨ Delegated Agent: tommyBuyerAgent (AI Agent)
+│                 ├─ Agent AID (Delegated from OOR Holder)
+│                 ├─ KEL Seal (Anchored in OOR Holder's KEL)
+│                 ├─ OOBI Resolved (QVI, LE, Sally)
+│                 └─ ✓ Verified by Sally Verifier
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                              Credential Flow Summary                         ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+1. GEDA (ROOT) → QVI
+   └─ Issues QVI Credential
+
+2. QVI → Legal Entities (Jupiter & Tommy)
+   └─ Issues LE Credentials (with LEI)
+
+3. Legal Entities → QVI (OOR_AUTH)
+   └─ Authorizes QVI to issue OOR credential to specific person
+
+4. QVI → Persons (Chief Sales Officer, Chief Procurement Officer)
+   └─ Issues OOR Credentials (chained to LE Credential)
+
+5. Persons → Sally Verifier
+   └─ Presents OOR Credentials for verification
+
+6. ✨ NEW: OOR Holders → Agents (Delegation)
+   ├─ Agent creates delegation request
+   ├─ OOR Holder approves with KEL seal
+   ├─ Agent completes delegation
+   ├─ Agent resolves OOBIs (QVI, LE, Sally)
+   └─ Sally verifies complete delegation chain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                            Verification Points                               ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Sally Verifier validates:
+  ✓ Digital signatures (KERI)
+  ✓ Credential chain integrity
+  ✓ Root of trust (GEDA)
+  ✓ Delegation relationships
+  ✓ Schema compliance
+  ✓ Edge validity
+  ✓ Revocation status
+  ✓ OOBI resolution
+  ✨ Agent delegation chain
+  ✨ OOR Holder KEL seal
+  ✨ Complete credential chain for agents
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                    Notes                                     ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Configuration Source: appconfig/configBuyerSellerAIAgent1.json
+
+✅ Features Implemented:
+  ✓ Configuration-driven flow
+  ✓ LEI values from configuration
+  ✓ Person names and roles from configuration
+  ✓ ✨ Agent delegation workflow
+  ✓ ✨ Sally verification for agents
+
+Recommended Enhancements:
+  → Add credential revocation and rotation features
+  → Add multi-agent support per person
+  → Add agent capability scopes
+
+Standards Compliance:
+  ✓ GLEIF vLEI Ecosystem Governance Framework
+  ✓ KERI (Key Event Receipt Infrastructure)
+  ✓ ACDC (Authentic Chained Data Containers)
+  ✓ CESR (Composable Event Streaming Representation)
+  ✓ OOBI (Out-Of-Band Introduction)
+  ✓ ✨ Agent Delegation via KEL
+
+Reference: https://github.com/GLEIF-IT/vlei-hackathon-2025-workshop
+
+
+╔══════════════════════════════════════════════════════════════╗
+║                    Execution Complete                        ║
+╚══════════════════════════════════════════════════════════════╝
+
+✅ Setup Complete!
+
+Summary:
+  • GEDA (Root) and QVI established
+  • 2 organizations processed:
+    - JUPITER KNITTING COMPANY (1 person(s), 1 agent(s))
+    - TOMMY HILFIGER EUROPE B.V. (1 person(s), 1 agent(s))
+  • All credentials issued and presented to verifier
+  • ✨ 2 agent(s) delegated and verified
+  • Trust tree visualization generated
+
+✓ Configuration Integration:
+  1. LEI values sourced from configuration file
+  2. Person names and roles sourced from configuration file
+  3. Agent data sourced from configuration file
+  4. ✨ Complete agent delegation workflow implemented
+
+✨ Agent Delegation Summary:
+  • jupiterSellerAgent → Delegated from Jupiter_Chief_Sales_Officer
+    AID: EGNlvZ3YwQ4BKsZm1Dvqyy9WbN2dQgDuyhXEXwo8TXYR
+    Status: ✓ Verified by Sally
+  • tommyBuyerAgent → Delegated from Tommy_Chief_Procurement_Officer
+    AID: EJ85rCwPuMImI_kBFiJ4Ar0MmDZySy5WYCWugOnXpAQL
+    Status: ✓ Verified by Sally
+
+📋 Next Steps:
+  1. Agents can now act on behalf of OOR holders
+  2. Test agent delegation verification independently
+  3. Add agent capability scopes if needed
+  4. Implement credential revocation and rotation
+  5. Enhance error handling and validation
+
+📄 Documentation:
+  • Configuration: ./appconfig/configBuyerSellerAIAgent1.json
+  • Trust Tree: ./task-data/trust-tree-buyerseller.txt
+  • Agent Guide: AGENT-DELEGATION-QUICK-START.md
+  • Complete Docs: AGENT-DELEGATION-IMPLEMENTATION-COMPLETE.md
+
+✨ vLEI credential system with agent delegation completed successfully!
+
+root@ChainAimMain:~/projects/vLEIWorkLinux1# ./test-agent-verification-v2.sh
+==========================================
+ENHANCED AGENT VERIFICATION TEST (V2)
+==========================================
+
+Test Configuration:
+  Agent Name: jupiterSellerAgent
+  OOR Holder Name: Jupiter_Chief_Sales_Officer
+  Verifier URL: http://localhost:9724
+
+Extracted AIDs:
+  Agent AID: EGNlvZ3YwQ4BKsZm1Dvq...
+  OOR Holder AID: EOk-6vJMLdXpcMFCgh_Z...
+
+==========================================
+TEST 1: Verifier Version Check
+==========================================
+
+Verifier Information:
+vLEI Agent Verifier with KERI
+  Version: 2.0.0
+  Coverage: unknown
+
+✅ V2 Detected - Enhanced verification available!
+
+==========================================
+TEST 2: Direct Verification API Call
+==========================================
+
+Sending verification request...
+
+❌ TEST 2 FAILED: Verification failed
+Response:
+{
+  "detail": "Agent AID not found in KEL"
+}
+root@ChainAimMain:~/projects/vLEIWorkLinux1# ./test-sally-endpoint-direct.sh
+================================================
+DIRECT SALLY ENDPOINT TEST
+================================================
+
+Testing Sally Custom Extension:
+
+❌ TEST 2 FAILED: Verification failed
+Response:
+{
+  "detail": "Agent AID not found in KEL"
+}
+root@ChainAimMain:~/projects/vLEIWorkLinux1# ./test-sally-endpoint-direct.sh
+================================================
+DIRECT SALLY ENDPOINT TEST
+================================================
+
+Testing Sally Custom Extension:
+Response:
+{
+  "detail": "Agent AID not found in KEL"
+}
+root@ChainAimMain:~/projects/vLEIWorkLinux1# ./test-sally-endpoint-direct.sh
+================================================
+DIRECT SALLY ENDPOINT TEST
+================================================
+
+Testing Sally Custom Extension:
+{
+  "detail": "Agent AID not found in KEL"
+}
+root@ChainAimMain:~/projects/vLEIWorkLinux1# ./test-sally-endpoint-direct.sh
+================================================
+DIRECT SALLY ENDPOINT TEST
+================================================
+
+Testing Sally Custom Extension:
+root@ChainAimMain:~/projects/vLEIWorkLinux1# ./test-sally-endpoint-direct.sh
+================================================
+DIRECT SALLY ENDPOINT TEST
+================================================
+
+Testing Sally Custom Extension:
+DIRECT SALLY ENDPOINT TEST
+================================================
+
+Testing Sally Custom Extension:
+================================================
+
+Testing Sally Custom Extension:
+
+Testing Sally Custom Extension:
+Testing Sally Custom Extension:
+  Endpoint: POST http://verifier:9723/verify/agent-delegation
+  Agent AID: EGNlvZ3YwQ4BKsZm1Dvqyy9WbN2dQgDuyhXEXwo8TXYR
+  OOR Holder AID: EOk-6vJMLdXpcMFCgh_Z300eE1v6pzY15ba8S2vzJSbM
+
+  Agent AID: EGNlvZ3YwQ4BKsZm1Dvqyy9WbN2dQgDuyhXEXwo8TXYR
+  OOR Holder AID: EOk-6vJMLdXpcMFCgh_Z300eE1v6pzY15ba8S2vzJSbM
+
+Sending request...
+
+WARN[0000] The "GEDA_PRE" variable is not set. Defaulting to a blank string.
+sh: jq: not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   165  100    26  100   139   1207   6456 --:--:-- --:--:-- --:--:--  7857
+curl: Failed writing body
+  Agent AID: EGNlvZ3YwQ4BKsZm1Dvqyy9WbN2dQgDuyhXEXwo8TXYR
+  OOR Holder AID: EOk-6vJMLdXpcMFCgh_Z300eE1v6pzY15ba8S2vzJSbM
+
+Sending request...
+
+WARN[0000] The "GEDA_PRE" variable is not set. Defaulting to a blank string.
+sh: jq: not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  Agent AID: EGNlvZ3YwQ4BKsZm1Dvqyy9WbN2dQgDuyhXEXwo8TXYR
+  OOR Holder AID: EOk-6vJMLdXpcMFCgh_Z300eE1v6pzY15ba8S2vzJSbM
+
+Sending request...
+
+WARN[0000] The "GEDA_PRE" variable is not set. Defaulting to a blank string.
+sh: jq: not found
+  Agent AID: EGNlvZ3YwQ4BKsZm1Dvqyy9WbN2dQgDuyhXEXwo8TXYR
+  OOR Holder AID: EOk-6vJMLdXpcMFCgh_Z300eE1v6pzY15ba8S2vzJSbM
+
+Sending request...
+  OOR Holder AID: EOk-6vJMLdXpcMFCgh_Z300eE1v6pzY15ba8S2vzJSbM
+
+
+Sending request...
+
+WARN[0000] The "GEDA_PRE" variable is not set. Defaulting to a blank string.
+sh: jq: not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   165  100    26  100   139   1207   6456 --:--:-- --:--:-- --:--:--  7857
+curl: Failed writing body
+root@ChainAimMain:~/projects/vLEIWorkLinux1# docker compose exec tsx-shell curl -s \
+  http://keria:3902/identifiers/EGNlvZ3YwQ4BKsZm1Dvqyy9WbN2dQgDuyhXEXwo8TXYR
+WARN[0000] The "GEDA_PRE" variable is not set. Defaulting to a blank string.
+root@ChainAimMain:~/projects/vLEIWorkLinux1# curl -s http://localhost:3902/identifiers/EGNlvZ3YwQ4BKsZm1Dvqyy9WbN2dQgDuyhXEXwo8TXYRvqyy9WbN2dQgDuyhXEXwo8TXYR
+root@ChainAimMain:~/projects/vLEIWorkLinux1#
+

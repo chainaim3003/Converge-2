@@ -1,0 +1,18 @@
+code is in C:\SATHYA\CHAINAIM3003\mcp-servers\stellarboston\LegentAlgoTITANV61. Currently the C:\SATHYA\CHAINAIM3003\mcp-servers\stellarboston\LegentAlgoTITANV61\algoTITANV6\algoranTITAN has a frontend that connects to the algorand blockchain through smartcontract and is in react.js. The look and feel is good, css styling is good. The home page is very good. then we have C:\SATHY,A\CHAINAIM3003\mcp-servers\stellarboston\LegentAlgoTITANV61\algoTITANV6\Legent which has UI directory which has a separate webapp that shows a mutli-agent buyer seller mutual delegation check of agents screen.  Similarly there is a frontend2, which shows the flow of send invoice from seller to buyer . both of them are configured to communicate via google A2A. and it connects to a server-api hosted in WSL , that inturn connects to the vLEI server and makes calls from A2A to vLEI. These applications are in next.js, some UI and ui functionality is good, but the look and feel and completeness is not so great. plus all these ui are fragmented, across react and next.js. In these the frontend, are currently NOT getting responses from the backend in JSON as http responses, which we need to fix and improve. We need to unify . these are the requirements. 
+
+
+The home-page of AlgoTITAN should be exactly the same as it is in C:\SATHYA\CHAINAIM3003\mcp-servers\stellarboston\LegentAlgoTITANV61\algoTITANV6\algoranTITAN has a frontend. 
+
+The google A2A and agentic configurations and connections to the backend need to be preserved. 
+
+the calls to the blockchain in the same pattern as payments need to be there, and will continue for other flows. 
+
+Also, it has to have connectivity to the smart contracts in Algorand, definitely through testnet, we need to be able to build and 
+deploy in localnet and testnet. 
+
+The Algorand smart wallets will be set up for many accounts. 
+
+Please suggest a detailed design, that can be reliably executed, to unify and consolidate for further development. our key concern is between react and next, and also make sure all other components integration is fine. Also please note, there are some scripts in
+C:\SATHYA\CHAINAIM3003\mcp-servers\stellarboston\LegentAlgoTITANV61\algoTITANV6\LegentvLEI that updates the agents in  C:\SATHYA\CHAINAIM3003\mcp-servers\stellarboston\LegentAlgoTITANV61\algoTITANV6\Legent\A2A\js. The agent cards are created and shared between directories.  Please stick to official documentation, current code structures, and best practices, so that there are no connectivity problems. DO NOT anything. Present a detailed design and a project structure visual. 
+
+
