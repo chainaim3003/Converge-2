@@ -35,14 +35,14 @@ export default function ETHTestPage() {
   const [sending, setSending] = useState(false)
 
   const connectMetaMask = async () => {
-    if (typeof window === 'undefined' || !window.ethereum) {
+    if (typeof window === 'undefined' || !(window as any).ethereum) {
       setStatus('❌ MetaMask not found — install from https://metamask.io')
       return
     }
     setStatus('🔄 Connecting MetaMask...')
     try {
       // eth_requestAccounts: https://docs.metamask.io/wallet/reference/eth_requestaccounts/
-      const provider = new ethers.BrowserProvider(window.ethereum)
+      const provider = new ethers.BrowserProvider((window as any).ethereum)
       const accounts: string[] = await provider.send('eth_requestAccounts', [])
       const network = await provider.getNetwork()
       setAccount(accounts[0])
@@ -91,7 +91,7 @@ export default function ETHTestPage() {
       setStatus('❌ NEXT_PUBLIC_CVUSD_CONTRACT_ADDRESS not set')
       return
     }
-    if (typeof window === 'undefined' || !window.ethereum) {
+    if (typeof window === 'undefined' || !(window as any).ethereum) {
       setStatus('❌ MetaMask not found')
       return
     }
@@ -99,7 +99,7 @@ export default function ETHTestPage() {
     setStatus('🔄 Sending cvUSD — approve in MetaMask...')
     try {
       // BrowserProvider requires MetaMask for signing
-      const provider = new ethers.BrowserProvider(window.ethereum)
+      const provider = new ethers.BrowserProvider((window as any).ethereum)
       const signer = await provider.getSigner()
       const contract = new ethers.Contract(CVUSD_CONTRACT_ADDRESS, ERC20_ABI, signer)
       const decimals: bigint = await contract.decimals()
@@ -126,17 +126,17 @@ export default function ETHTestPage() {
 
   // Listen for MetaMask account/chain changes
   useEffect(() => {
-    if (typeof window === 'undefined' || !window.ethereum) return
+    if (typeof window === 'undefined' || !(window as any).ethereum) return
     const onAccounts = (accounts: string[]) => {
       if (accounts.length === 0) { setAccount(null); setStatus('Disconnected') }
       else setAccount(accounts[0])
     }
-    const onChain = (hex: string) => setChainId(parseInt(hex, 16))
-    window.ethereum.on('accountsChanged', onAccounts)
-    window.ethereum.on('chainChanged', onChain)
+    const onChain = (hex: string) => { setChainId(parseInt(hex, 16)) }
+    (window as any).ethereum.on('accountsChanged', onAccounts)
+    (window as any).ethereum.on('chainChanged', onChain)
     return () => {
-      window.ethereum.removeListener('accountsChanged', onAccounts)
-      window.ethereum.removeListener('chainChanged', onChain)
+      (window as any).ethereum.removeListener('accountsChanged', onAccounts)
+      (window as any).ethereum.removeListener('chainChanged', onChain)
     }
   }, [])
 

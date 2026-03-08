@@ -575,12 +575,12 @@ export default function AgenticFlow() {
     if (!SELLER_WALLET_ADDRESS || !PLATFORM_WALLET_ADDRESS) {
       throw new Error('Seller/Platform wallet addresses not set in environment')
     }
-    if (typeof window === 'undefined' || !window.ethereum) {
+    if (typeof window === 'undefined' || !(window as any).ethereum) {
       throw new Error('MetaMask not found. Install MetaMask at https://metamask.io')
     }
 
     // BrowserProvider requires MetaMask for signing
-    const provider = new ethers.BrowserProvider(window.ethereum)
+    const provider = new ethers.BrowserProvider((window as any).ethereum)
     const signer = await provider.getSigner()
     const contract = new ethers.Contract(CVUSD_CONTRACT_ADDRESS, ERC20_ABI, signer)
 

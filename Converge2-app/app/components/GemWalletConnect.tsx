@@ -89,7 +89,7 @@ export default function MetaMaskConnect() {
       )}
 
       {/* Install Link */}
-      {typeof window !== 'undefined' && !window.ethereum && (
+      {typeof window !== 'undefined' && !(window as any).ethereum && (
         <div className="mt-4 p-3 bg-blue-50 rounded-lg">
           <p className="text-sm text-blue-700">
             Don&apos;t have MetaMask?{' '}

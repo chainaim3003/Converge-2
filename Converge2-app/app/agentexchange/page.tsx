@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { useState, useEffect, useRef } from "react"
 import { ethers } from "ethers"
@@ -175,6 +175,26 @@ const executeAtomicPayment = async (
     throw new Error('MetaMask not found. Install MetaMask at https://metamask.io')
   }
 
+  // Ensure MetaMask is on Sepolia (chainId 11155111) before any contract call
+  const currentChainId = await (window as any).ethereum.request({ method: 'eth_chainId' })
+  if (parseInt(currentChainId, 16) !== 11155111) {
+    try {
+      await (window as any).ethereum.request({
+        method: 'wallet_switchEthereumChain',
+        params: [{ chainId: '0xaa36a7' }],
+      })
+    } catch (switchError: any) {
+      if (switchError.code === 4902) {
+        await (window as any).ethereum.request({
+          method: 'wallet_addEthereumChain',
+          params: [{ chainId: '0xaa36a7', chainName: 'Sepolia', nativeCurrency: { name: 'SepoliaETH', symbol: 'ETH', decimals: 18 }, rpcUrls: ['https://rpc.sepolia.org'], blockExplorerUrls: ['https://sepolia.etherscan.io'] }],
+        })
+      } else {
+        throw new Error('Switch MetaMask to Sepolia: ' + switchError.message)
+      }
+    }
+  }
+
   // BrowserProvider requires MetaMask for signing
   const provider = new ethers.BrowserProvider(window.ethereum)
   const signer = await provider.getSigner()
@@ -192,13 +212,14 @@ const executeAtomicPayment = async (
   const txHash = receipt1.hash
   console.log(`✅ Seller payment confirmed: ${txHash}`)
 
-  // Payment 2: Buyer → Platform (fee)
+  // Payment 2: Buyer → Platform (fee) — submitted and confirmed in background
+  // Do NOT await tx2.wait() — this unblocks the UI immediately after seller payment
   console.log(`📤 Submitting platform fee (${platformFee.toFixed(6)} cvUSD) — approve in MetaMask...`)
   const feeAmount = ethers.parseUnits(platformFee.toFixed(6), decimals)
   const tx2 = await contract.transfer(PLATFORM_WALLET_ADDRESS, feeAmount)
   console.log(`🔄 Platform fee submitted: ${tx2.hash}`)
-  await tx2.wait()
-  console.log(`✅ Platform fee confirmed`)
+  // Fire and forget — confirms on-chain independently, does not block flow
+  tx2.wait().then(() => console.log(`✅ Platform fee confirmed: ${tx2.hash}`)).catch((e: any) => console.warn(`⚠️ Platform fee confirmation error: ${e.message}`))
 
   const explorerUrl = `${SEPOLIA_EXPLORER}/tx/${txHash}`
   console.log(`🔗 View on Sepolia Etherscan: ${explorerUrl}`)
@@ -716,9 +737,59 @@ export default function VerificationFlow() {
         return
       }
 
-      await new Promise(resolve => setTimeout(resolve, 1000))
+      // Respond to Seller — real A2A message to seller agent with payment confirmation
+      setInvoiceFlowStep('payment-confirmed')
+      addSellerMessage("📨 Notifying seller agent of payment confirmation via A2A...", 'agent')
+
+      try {
+        const paymentConfirmMsg = {
+          jsonrpc: '2.0',
+          method: 'message/send',
+          params: {
+            message: {
+              messageId: crypto.randomUUID(),
+              kind: 'message',
+              role: 'agent',
+              parts: [{
+                kind: 'data',
+                data: {
+                  type: 'payment_confirmation',
+                  paymentConfirmed: true,
+                  transactionHash: paymentData.transactionHash,
+                  amount: paymentData.amount,
+                  currency: paymentData.currency,
+                  platformFee: paymentData.platformFee,
+                  explorerUrl: paymentData.xrplExplorerLink,
+                  timestamp: new Date().toISOString(),
+                  senderAgent: 'Tommy Buyer Agent'
+                }
+              }]
+            }
+          },
+          id: Date.now()
+        }
+
+        const sellerResponse = await fetch('http://localhost:8080/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(paymentConfirmMsg)
+        })
+
+        if (sellerResponse.ok) {
+          addSellerMessage(`✅ Seller agent notified of payment!`, 'agent')
+          console.log('[INVOICE FLOW] Seller agent notified of payment confirmation')
+        } else {
+          console.warn('[INVOICE FLOW] Seller agent responded with:', sellerResponse.status)
+          addSellerMessage(`⚠️ Seller notified (status: ${sellerResponse.status})`, 'agent')
+        }
+      } catch (notifyError: any) {
+        console.warn('[INVOICE FLOW] Could not notify seller agent:', notifyError.message)
+        addSellerMessage(`⚠️ Could not reach seller agent: ${notifyError.message}`, 'agent')
+      }
+
+      await new Promise(resolve => setTimeout(resolve, 500))
       setInvoiceFlowStep('complete')
-      addSellerMessage("🎉 Invoice flow complete! Payment received and verified.", 'agent')
+      addSellerMessage("🎉 Invoice flow complete! Payment received, verified, and seller notified.", 'agent')
 
     } catch (error: any) {
       console.error('❌ [INVOICE FLOW ERROR]:', error)

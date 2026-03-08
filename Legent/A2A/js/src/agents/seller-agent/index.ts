@@ -143,9 +143,39 @@ class SellerAgentExecutor implements AgentExecutor {
       
       if (dataParts.length > 0) {
         const docData = (dataParts[0] as any).data;
-        
+
+        // ========== PAYMENT CONFIRMATION FROM BUYER ==========
+        if (docData.type === 'payment_confirmation' && docData.paymentConfirmed) {
+          console.log('[SellerAgent] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+          console.log('[SellerAgent] 💰 PAYMENT CONFIRMATION RECEIVED FROM BUYER');
+          console.log('[SellerAgent] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+          console.log(`[SellerAgent] TX Hash: ${docData.transactionHash}`);
+          console.log(`[SellerAgent] Amount:  ${docData.amount} ${docData.currency}`);
+          console.log(`[SellerAgent] Fee:     ${docData.platformFee} ${docData.currency}`);
+          console.log(`[SellerAgent] From:    ${docData.senderAgent}`);
+          console.log(`[SellerAgent] Time:    ${docData.timestamp}`);
+          console.log(`[SellerAgent] Explorer: ${docData.explorerUrl}`);
+
+          responseText = `
+✅ PAYMENT CONFIRMATION RECEIVED
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+💰 PAYMENT DETAILS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Status:     CONFIRMED ✅
+Amount:     ${docData.amount} ${docData.currency}
+Platform Fee: ${docData.platformFee} ${docData.currency}
+From:       ${docData.senderAgent}
+TX Hash:    ${docData.transactionHash}
+Timestamp:  ${docData.timestamp}
+
+🔗 Explorer: ${docData.explorerUrl}
+
+Invoice payment has been received and recorded.
+          `.trim();
+
         // ========== STAGE 1: RECEIVE PURCHASE ORDER FROM BUYER ==========
-        if (docData.stage === 1 && docData.poId) {
+        } else if (docData.stage === 1 && docData.poId) {
           const poData = docData as PurchaseOrderMessage;
           console.log('[SellerAgent] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
           console.log('[SellerAgent] 📋 PURCHASE ORDER RECEIVED FROM BUYER');
@@ -256,7 +286,7 @@ Next: Invoice will be sent after buyer payment
             },
             destinationAccount: {
               type: 'digital_asset',
-              chainId: process.env.ALGORAND_GENESIS_ID || 'testnet-v1.0',
+              chainId: process.env.ETH_CHAIN_ID || '11155111',
               walletAddress: process.env.SELLER_ADDRESS || ''
             }
           },
@@ -349,7 +379,7 @@ Invoice Details:
           tradeTotal: paymentConfig.tradeAmount,
           destinationAccount: {
             type: 'digital_asset',
-            chainId: process.env.ALGORAND_GENESIS_ID || 'testnet-v1.0',
+            chainId: process.env.ETH_CHAIN_ID || '11155111',
             walletAddress: process.env.SELLER_ADDRESS || ''
           },
           senderAgent: {
@@ -501,7 +531,7 @@ async function main() {
   }
 
   if (!process.env.ALGORAND_GENESIS_ID) {
-    console.warn('⚠️  WARNING: ALGORAND_GENESIS_ID not set, using default: testnet-v1.0');
+    console.warn('⚠️  WARNING: ETH_CHAIN_ID not set, using default: 11155111');
   }
 
   // Load and display payment configuration
@@ -509,7 +539,7 @@ async function main() {
   
   console.log('✅ Environment variables loaded:');
   console.log(`   Seller Address: ${process.env.SELLER_ADDRESS}`);
-  console.log(`   Chain ID: ${process.env.ALGORAND_GENESIS_ID}`);
+  console.log(`   Chain ID: ${process.env.ETH_CHAIN_ID}`);
   console.log(`\n💰 Payment Configuration:`);
   console.log(`   Trade Amount: ${paymentConfig.tradeAmount} ${paymentConfig.currency}`);
   console.log(`   3-Stage Breakdown:`);
