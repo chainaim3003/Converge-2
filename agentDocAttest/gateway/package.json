@@ -1,0 +1,23 @@
+{
+  "name": "agent-doc-attest-gateway",
+  "version": "1.0.0",
+  "description": "DocAttest Marketplace Gateway — registers trades and accepts documents for CRE assessment",
+  "type": "module",
+  "scripts": {
+    "start": "npx tsx index.ts",
+    "dev": "npx tsx watch index.ts"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.13.4",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}

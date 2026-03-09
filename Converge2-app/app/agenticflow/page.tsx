@@ -44,6 +44,10 @@ import {
 const USE_MOCK_VERIFICATION = false // DEEP-EXT: Always use real API calls
 const API_BASE_URL = 'http://localhost:4000'
 
+// DocAttest Gateway URL — marketplace trade registry for CRE AI assessment
+// agentDocAttest/gateway/index.ts must be running on this port
+const DOCATTEST_GATEWAY_URL = process.env.NEXT_PUBLIC_DOCATTEST_GATEWAY_URL || 'http://localhost:3002'
+
 // Agent Card URLs - served by the actual agent servers
 // Buyer Agent (port 9090) and Seller Agent (port 8080) must be running!
 const BUYER_AGENT_CARD_URL = 'http://localhost:9090/.well-known/agent-card.json'
@@ -265,6 +269,9 @@ export default function AgenticFlow() {
   const [currentPOData, setCurrentPOData] = useState<POData | null>(null)
   const [pendingInvoice, setPendingInvoice] = useState<InvoiceData | null>(null)
   const [pendingReceipt, setPendingReceipt] = useState<WarehouseReceiptData | null>(null)
+
+  // DocAttest: trade ID returned from marketplace when PO is registered onchain
+  const [docAttestTradeId, setDocAttestTradeId] = useState<number | null>(null)
 
   // ============================================
   // WALLET BALANCE FUNCTIONS
@@ -892,6 +899,25 @@ export default function AgenticFlow() {
       
       if (verified) {
         addMessage("✅ Seller verified! PO accepted.", 'agent')
+
+        // DocAttest: Register agreed PO onchain at the moment of mutual acceptance
+        // This locks the PO as the immutable reference for all subsequent CRE assessments
+        try {
+          const registerRes = await fetch(`${DOCATTEST_GATEWAY_URL}/api/register-trade`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ po, buyer: BUYER_WALLET_ADDRESS, seller: SELLER_WALLET_ADDRESS }),
+          })
+          const registerResult = await registerRes.json()
+          if (registerResult.success) {
+            setDocAttestTradeId(parseInt(registerResult.tradeId, 10))
+            addMessage(`📋 DocAttest: PO registered onchain as trade #${registerResult.tradeId} (block ${registerResult.blockNumber})`, 'agent')
+            console.log(`📋 DocAttest: PO locked onchain — tradeId=${registerResult.tradeId}, tx=${registerResult.txHash}`)
+          }
+        } catch (err) {
+          console.log('DocAttest: register-trade gateway not available — CRE assessment will not run for this trade')
+        }
+
         addMessage("💰 Initiating 20% upfront payment...", 'agent')
         
         setTimeout(() => initiatePOPayment(po), 1500)
@@ -1031,6 +1057,25 @@ export default function AgenticFlow() {
       
       if (verified) {
         addMessage("✅ Seller verified! Invoice is legitimate.", 'agent')
+
+        // DocAttest: Submit invoice for CRE AI assessment against the onchain PO
+        if (docAttestTradeId !== null) {
+          try {
+            const invoiceRes = await fetch(`${DOCATTEST_GATEWAY_URL}/api/submit-invoice`, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ tradeId: docAttestTradeId, invoice }),
+            })
+            const invoiceResult = await invoiceRes.json()
+            if (invoiceResult.success) {
+              addMessage(`📋 DocAttest: Invoice submitted for CRE AI assessment (trade #${docAttestTradeId})`, 'agent')
+              console.log(`📋 DocAttest: Invoice submitted — tx=${invoiceResult.txHash}`)
+            }
+          } catch (err) {
+            console.log('DocAttest: submit-invoice gateway not available')
+          }
+        }
+
         setPendingInvoice(invoice)
         addMessage("💰 Processing invoice payment...", 'agent')
         
@@ -1127,6 +1172,25 @@ export default function AgenticFlow() {
       
       if (verified) {
         addMessage("✅ Seller verified! Warehouse receipt is legitimate.", 'agent')
+
+        // DocAttest: Submit warehouse receipt for CRE AI assessment against the onchain PO
+        if (docAttestTradeId !== null) {
+          try {
+            const receiptRes = await fetch(`${DOCATTEST_GATEWAY_URL}/api/submit-receipt`, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ tradeId: docAttestTradeId, receipt }),
+            })
+            const receiptResult = await receiptRes.json()
+            if (receiptResult.success) {
+              addMessage(`📋 DocAttest: Receipt submitted for CRE AI assessment (trade #${docAttestTradeId})`, 'agent')
+              console.log(`📋 DocAttest: Receipt submitted — tx=${receiptResult.txHash}`)
+            }
+          } catch (err) {
+            console.log('DocAttest: submit-receipt gateway not available')
+          }
+        }
+
         setPendingReceipt(receipt)
         addMessage("💰 Processing receipt confirmation payment...", 'agent')
         

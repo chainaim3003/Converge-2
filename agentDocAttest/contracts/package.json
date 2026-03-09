@@ -1,0 +1,16 @@
+{
+  "name": "agent-doc-attest-contracts",
+  "version": "1.0.0",
+  "description": "TradeRegistry smart contract — Hardhat compile, deploy, verify",
+  "type": "commonjs",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deploy.ts --network baseSepolia",
+    "verify": "npx hardhat verify --network baseSepolia"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.18",
+    "dotenv": "^16.4.7"
+  }
+}

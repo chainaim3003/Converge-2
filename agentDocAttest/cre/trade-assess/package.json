@@ -1,0 +1,18 @@
+{
+  "name": "agent-doc-attest-cre-workflow",
+  "version": "1.0.0",
+  "description": "CRE Workflow: AI Trade Assessment — EVM Log Trigger → Read Onchain PO → LLM Assessment → Write Attestation",
+  "type": "module",
+  "main": "src/workflow.ts",
+  "scripts": {
+    "simulate": "cre simulate --env ../../.env",
+    "build": "cre build"
+  },
+  "dependencies": {
+    "@chainlink/cre-sdk": "^1.1.2",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}

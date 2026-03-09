@@ -1,0 +1,25 @@
+{
+  "name": "agent-doc-attest",
+  "version": "1.0.0",
+  "description": "DocAttest — AI Trade Assessment via Chainlink CRE for the ChainAim Marketplace",
+  "private": true,
+  "workspaces": [
+    "gateway",
+    "cre/trade-assess",
+    "contracts"
+  ],
+  "scripts": {
+    "compile": "cd contracts && npx hardhat compile",
+    "deploy": "cd contracts && npx hardhat run scripts/deploy.ts --network baseSepolia",
+    "gateway": "cd gateway && npx tsx index.ts",
+    "simulate": "cd cre/trade-assess && cre simulate --env ../../.env"
+  },
+  "keywords": [
+    "chainlink",
+    "cre",
+    "trade-finance",
+    "ai",
+    "attestation"
+  ],
+  "license": "MIT"
+}

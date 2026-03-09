@@ -1,0 +1,7 @@
+{
+  "$schema": "https://docs.chain.link/cre/config-schema.json",
+  "tradeRegistryAddress": "${TRADE_REGISTRY_ADDRESS}",
+  "chainSelector": "16015286601757825753",
+  "llmApiUrl": "${LLM_API_URL}",
+  "llmApiKey": "${LLM_API_KEY}"
+}
